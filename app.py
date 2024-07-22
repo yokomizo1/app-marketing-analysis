@@ -12,7 +12,7 @@ sns.set_theme(style="ticks", rc=custom_params)
 
 # Configuração da página
 st.set_page_config(page_title='Telemarketing Analysis',
-                   page_icon='E:/Python/Projetos/data/telmarketing_icon.png',
+                   page_icon='telmarketing_icon.png',
                    layout="wide",
                    initial_sidebar_state='expanded')
 
@@ -64,7 +64,7 @@ def main():
     st.markdown("---")
 
     # Carregar e exibir a imagem na barra lateral
-    image = Image.open("E:/Python/Projetos/data/Bank-Branding.jpg")
+    image = Image.open("Bank-Branding.jpg")
     st.sidebar.image(image)
 
     st.sidebar.write("## Upload the file")
@@ -73,7 +73,7 @@ def main():
 
     # Adicionar a opção de carregar o arquivo padrão se não for fornecido um upload
     if data_file_1 is None:
-        data_file_1 = "E:/Python/Projetos/data/bank-additional-full.csv"
+        data_file_1 = "bank-additional.csv"
 
     if data_file_1 is not None:
         start = timeit.default_timer()
